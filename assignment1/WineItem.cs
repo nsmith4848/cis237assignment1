@@ -8,17 +8,19 @@ namespace assignment1
 {
     class WineItem
     {
-        private Int32 idNumberInt32;
+        private string idNumberString;                     //Strings inside of each item record
         private string itemNameString;
         private string quantityString;
 
-        public Int32 IDNumberInt32
+       //Getters and setters
+        
+        public string IDNumberString                       
         {
-            get { return idNumberInt32; }
-            set { idNumberInt32 = value; }
+            get { return idNumberString; }
+            set { idNumberString = value; }
         }
 
-        public string ItemNameString
+        public string ItemNameString                 
         {
             get {return itemNameString ;}
             set { itemNameString = value; }
@@ -30,18 +32,23 @@ namespace assignment1
             set {quantityString = value;}
         }
 
+       
+        //Override of ToString method in order to make the data readable by the user
         public override string ToString()
         {
-            return this.idNumberInt32.ToString() + " " + this.itemNameString + " " + this.quantityString;
+            return this.idNumberString + " " + this.itemNameString + " " + this.quantityString;
         }
 
-        public WineItem(Int32 idNumberInt32, string itemNameString, string quantityString)
+
+        //Constructor
+        public WineItem(string idNumberString, string itemNameString, string quantityString)
         {
-            this.idNumberInt32 = idNumberInt32;
+            this.idNumberString = idNumberString;
             this.itemNameString = itemNameString;
             this.quantityString = quantityString;
         }
 
+        //Empty Constructor
         public WineItem()
         {
 
