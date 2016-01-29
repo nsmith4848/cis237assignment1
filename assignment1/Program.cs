@@ -20,7 +20,7 @@ namespace assignment1
             {
                 if(choice == 1)
                 {
-                    csvProcessor.ProcessCSV();
+                    csvProcessor.ProcessCSV("../datafiles/WineList.csv",wineItemCollection);
                 }
                 if(choice == 2)
                 {

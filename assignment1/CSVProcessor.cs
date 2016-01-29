@@ -9,18 +9,29 @@ namespace assignment1
 {
     class CSVProcessor
     {
-        public void ProcessCSV()
+        public void ProcessCSV(string pathToCSV, WineItemCollection wineItemList)
         {
             StreamReader streamReader = null;
 
             try
             {
+                string line;
 
+                streamReader = new StreamReader();
+
+                int counter = 0;
+
+                while(line = streamReader.ReadLine(pathToCSV) != null)
+                {
+                    processLine(line, )
+                }
             }
             catch
             {
 
             }
         }
+
+        ReadLine()
     }
 }
