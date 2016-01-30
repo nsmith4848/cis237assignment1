@@ -29,7 +29,7 @@ namespace assignment1
         public void ProcessCSV()                                 //Used to allow the CSVProcessor class to use the array
         {
             CSVProcessor csvProcessor = new CSVProcessor();
-            csvProcessor.ProcessCSV("../datafiles/WineList.csv", wineItemList);            //Incorrect path, I'm not sure what the correct one is
+            csvProcessor.ProcessCSV("../../../datafiles/WineList.csv", wineItemList);            //Incorrect path, I'm not sure what the correct one is
         }
 
         public string SearchForWineItem(string searchIDNumber)                      //Used to find the searched ID Number's corresponding record, sends back null if not found
